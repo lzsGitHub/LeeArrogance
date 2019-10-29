@@ -1,12 +1,15 @@
 package com.sixteen_night.demo;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
+
+import com.chad.library.adapter.base.BaseQuickAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,6 +39,12 @@ public class MainActivity extends AppCompatActivity {
             mAdapter = new TestAdapter();
             mAdapter.bindToRecyclerView(rc);
             mAdapter.isFirstOnly(true);
+            mAdapter.setOnItemChildClickListener(new BaseQuickAdapter.OnItemChildClickListener() {
+                @Override
+                public void onItemChildClick(BaseQuickAdapter adapter, View view, int position) {
+                    startActivity(new Intent(MainActivity.this,TestActivity.class));
+                }
+            });
             rc.addOnScrollListener(new RecyclerView.OnScrollListener() {
                 //悬浮View高
                 int mSuspensionHeight;

@@ -22,6 +22,7 @@ public class TestAdapter extends BaseQuickAdapter<TextBean, BaseViewHolder> {
         if (!TextUtils.isEmpty(item.getDate()) && item.getDate().length() >= 7) {
             helper.setGone(R.id.sus_view, item.isShowtitle());
             helper.setText(R.id.sus_view, item.getDate().substring(0, 7));
+            helper.addOnClickListener(R.id.item);
         }
     }
 
