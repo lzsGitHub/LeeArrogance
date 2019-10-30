@@ -1,4 +1,4 @@
-package com.sixteen_night.demo;
+package com.sixteen_night.demo.bean;
 
 /**
  * Created by Lee on 2019/9/5 10:54.

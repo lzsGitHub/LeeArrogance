@@ -1,4 +1,4 @@
-package com.sixteen_night.demo;
+package com.sixteen_night.demo.activity;
 
 
 import android.content.Intent;
@@ -10,6 +10,9 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
+import com.sixteen_night.demo.R;
+import com.sixteen_night.demo.TestAdapter;
+import com.sixteen_night.demo.bean.TextBean;
 
 import java.util.ArrayList;
 import java.util.List;

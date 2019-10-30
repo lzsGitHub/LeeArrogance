@@ -4,9 +4,7 @@ import android.text.TextUtils;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
-
-import java.util.ArrayList;
-import java.util.List;
+import com.sixteen_night.demo.bean.TextBean;
 
 /**
  * Created by Lee on 2019/9/5 10:43.
