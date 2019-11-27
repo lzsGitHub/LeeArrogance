@@ -3,7 +3,6 @@ package com.sixteen_night.demo.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -12,16 +11,15 @@ import android.view.View;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
 import com.sixteen_night.demo.R;
+import com.sixteen_night.demo.mvp.view.FirstTestViewActivity;
 
 import java.util.Arrays;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
-
 public class MainActivity extends AppCompatActivity {
     RecyclerView rc;
-    private String[] indexStr = {"recycleView+悬浮栏", "弹性滑动布局", "AsyncTask实践", "OpenCv抠图"};
-    private Class[] indexClass = {SusActivity.class, TestActivity.class, TaskActivity.class, OpenCVTestActivity.class};
+    private String[] indexStr = {"recycleView+悬浮栏", "弹性滑动布局", "AsyncTask实践", "OpenCv抠图", "MVP初步实践"};
+    private Class[] indexClass = {SusActivity.class, TestActivity.class, TaskActivity.class, OpenCVTestActivity.class
+            , FirstTestViewActivity.class};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

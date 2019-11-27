@@ -1,23 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.sixteen_night.demo">
+          package="com.sixteen_night.demo">
 
-    <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
     <uses-feature
         android:name="android.hardware.camera"
-        android:required="false" />
+        android:required="false"/>
     <uses-feature
         android:name="android.hardware.camera.autofocus"
-        android:required="false" />
+        android:required="false"/>
     <uses-feature
         android:name="android.hardware.camera.front"
-        android:required="false" />
+        android:required="false"/>
     <uses-feature
         android:name="android.hardware.camera.front.autofocus"
-        android:required="false" />
+        android:required="false"/>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"/>
 
     <application
         android:allowBackup="true"
@@ -28,20 +35,17 @@
         android:theme="@style/AppTheme">
         <activity android:name=".activity.MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".activity.TestActivity" />
-        <activity android:name=".activity.SusActivity" />
-        <activity android:name=".activity.TaskActivity" />
-        <activity android:name=".activity.OpenCVTestActivity" />
+        <activity android:name=".activity.TestActivity"/>
+        <activity android:name=".activity.SusActivity"/>
+        <activity android:name=".activity.TaskActivity"/>
+        <activity android:name=".activity.OpenCVTestActivity"/>
+        <activity android:name=".mvp.view.FirstTestViewActivity">
+        </activity>
     </application>
-    <supports-screens
-        android:anyDensity="true"
-        android:largeScreens="true"
-        android:normalScreens="true"
-        android:resizeable="true"
-        android:smallScreens="true" />
+
 </manifest>
